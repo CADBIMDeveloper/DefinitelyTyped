@@ -1677,6 +1677,8 @@ declare namespace Autodesk {
               is2d: boolean;
               numGeomsInMemory: number;
               numObjects: number;
+
+              getGeometry(geomId: number): THREE.BufferGeometry | undefined;
             }
 
             class LocalStorageClass {
