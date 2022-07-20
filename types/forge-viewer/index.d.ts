@@ -943,6 +943,7 @@ declare namespace Autodesk {
             getIsLocked(): boolean;
             getTool(name: string): ToolInterface;
             getToolNames(): string[];
+            isToolActivated(name: string): boolean;
             recordHomeView(): void;
             setIsLocked(state: boolean): boolean;
         }
