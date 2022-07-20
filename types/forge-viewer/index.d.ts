@@ -1962,7 +1962,7 @@ declare namespace Autodesk {
                 getFragmentProxy(model: Model, fragId: number): any;
                 getLayersRoot(): any;
                 hasModels(): boolean;
-                hitTest(clientX: number, clientY: number, ignoreTransparent?: boolean): HitTestResult;
+                hitTest(clientX: number, clientY: number, ignoreTransparent?: boolean, dbIds?: number[], modelIds?: number[]): HitTestResult;
                 hitTestViewport(vpVec: THREE.Vector3, ignoreTransparent: boolean): HitTestResult;
                 initialize(needsClear: boolean, needsRender: boolean, overlayDirty: boolean): void;
                 intersectGround(clientX: number, clientY: number): THREE.Vector3;
