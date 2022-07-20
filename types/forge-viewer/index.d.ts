@@ -778,6 +778,9 @@ declare namespace Autodesk {
             setThemingColor(dbId: number, color: THREE.Vector4, recursive?: boolean): void;
             setUUID(urn: string): void;
             setViewportBounds(materialsManager: Private.MaterialManager, bounds: THREE.Box3|THREE.Box2): void;
+            setPlacementTransform(matrix: THREE.Matrix4): void;
+            invalidateBBoxes(): void;
+            changePaperVisibility(show: boolean): void;
         }
 
         namespace MeasureCommon {
