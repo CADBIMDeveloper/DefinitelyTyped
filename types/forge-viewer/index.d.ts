@@ -1990,6 +1990,7 @@ declare namespace Autodesk {
                 worldToClient(pos: THREE.Vector3): THREE.Vector3;
                 worldUp(): THREE.Vector3;
                 worldUpName(): string;
+                highlightObjectNode(model: Model, dbId: number, value: boolean, simpleHighlight?: boolean): void;
             }
 
             class VisibilityManager {
