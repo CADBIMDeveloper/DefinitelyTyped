@@ -2064,6 +2064,11 @@ declare namespace THREE {
         onPointerMove(event: any): boolean;
         onPointerUp(event: any): boolean;
         update(highlight?: boolean): void;
+        setSize(size: number): void;
+        setSpace(space: "local" | "world"): void;
+
+        addEventListener(event: string, listener: (eventData: any) => void): void;
+        removeEventListener(type: string, listener: (eventData: any) => void): void;
     }
 
     interface Vector {
