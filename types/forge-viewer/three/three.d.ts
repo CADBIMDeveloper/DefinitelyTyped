@@ -2055,7 +2055,7 @@ declare namespace THREE {
     class TransformControls {
         visible: boolean;
 
-        constructor(camera: Camera, domElement: HTMLElement, mode: string, includeAxis?: boolean);
+        constructor(camera: Camera, domElement: HTMLElement, mode: string, includeAxis?: "X" | "Y" | "Z" | "XY" | "XZ" | "YZ" | "XYZ" | string);
 
         attach(object: any): void;
         detach(object: any): void;
